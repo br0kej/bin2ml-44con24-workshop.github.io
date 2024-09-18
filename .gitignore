@@ -14,3 +14,4 @@ vendor/
 # Data / Tools
 Dataset-1/
 bin2ml/
+Gemfile.lock
