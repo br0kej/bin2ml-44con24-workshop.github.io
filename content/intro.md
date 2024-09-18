@@ -2,40 +2,45 @@
 nav_order: 1
 title: Introduction
 ---
+The focus of the workshop is to provide you with a guided walk-through on using `bin2ml`, an open source
+tool that leverages `radare2` to generate machine learning ready data from software binaries.
 
-Learn-Static Lesson Template is a Jekyll project to create a simple lesson or workshop website, with a [Bootstrap](https://getbootstrap.com/)-based theme, designed for hosting on [GitHub Pages](https://pages.github.com/).
+## Overview
 
-It features a sidebar navigation providing clear structure for step by step content.
-The sidebar nav supports pages nested into sections to help organize your lesson content. 
+This workshop focuses on re-creating the seminal GEMINI model from raw binaries to trained model and will be structured as follows:
 
-All content is written using basic Markdown, making it simple to write, edit, and reuse lesson materials.
+1. Background
+    - Introduce the concept of what a graph neural network is and how they differ from other types of neural networks
+    - Introduce the GEMINI approach, the data representation it uses and the features
+    - Introduce `bin2ml` and it's general approach
+2. Data Processing
+   - Source Binaries
+   - `extract` with `bin2ml`
+   - `generate` with `bin2ml`
+3. Data Loading and Training
+   - Load data into `pytorch geometric` compatible objects
+   - Initialise and Train the model
+4. Evaluate the Model
+   - What metrics to use?
+   - Evaluate on Binary Code Similiarity Detection (BCSD) 
+   - Evaluate on N-day vulnerability detection libcrypto from a TP-Link router
+5. Where next?
+6. Feedback and Close Down
 
-To use Lesson Template to create your own website--> make a copy and replace the template content with your own!
+## Main Objectives
+- Provide attendees with hands on experience with bin2ml and demonstrate how easy it is to use
+- Inspire machine learning (ML) people who may be skilled in ML but get stuck or do not understand how to transform raw data (in our case binaries) into data ready for ML to apply their skills to this area
+- Lower the barrier of entry for non-ML people who may be interested in ML but need support with getting the data prepared to get training models and familiarise themselves with ML as a whole
 
-### Why?
+## Requirements
+You will need the following:
 
-Rather than making slides for a workshop, why not make a website? 
-It's easier to write, access, share, and reuse. 
-GitHub and GitHub Pages makes this relatively straightforward.
+- a laptop
+- docker installed
+- rust tool chain 
+- git
+- about 50GB of space
+- It would also be good to have an x86-64 SRE tool to check the binaries and explore how the binary ends up as a ml input.
 
-Writing content in this simple, reuseable format makes for a better [Open Educational Resource](https://en.wikipedia.org/wiki/Open_educational_resources) since anyone can make a copy and adapt!
-
-## GitHub Pages 
-
-One amazingly useful GitHub feature is [GitHub Pages](https://guides.github.com/features/pages/).
-It provides free static web hosting from any repository.
-Gh-pages is intended to host relatively simple sites for your GitHub portfolio, project, or documentation.
-Because it is free and a valuable transferable skill, this is a great option for teaching and learning.
-
-Many organizations are using GitHub to collaboratively create and publish public workshop websites. 
-For example: 
-
-- [Programming Historian](http://programminghistorian.org/)
-- [Software Carpentry](https://software-carpentry.org/), [Data Carpentry](http://www.datacarpentry.org/), [Library Carpentry](https://librarycarpentry.org/)
-- this site!
-
-{% capture text %}Note:
-There are *soft* limits and guidelines for gh-pages usage: sites should be < 1GB, use < 100GB bandwidth per month, and make < 10 builds per hour.
-If your site exceeds these quotas, GitHub will send you a notice asking you to modify the repository.
-All content must follow the [community guidelines](https://help.github.com/articles/github-community-guidelines/), e.g. no violence, obscene sex, or illegal stuff.{% endcapture %}
+{% capture text %}Note: If attending this workshop in person at 44con, we will have a bit of time at the start of the workshpp to set this stuff up!{% endcapture %}
 {% include alert.html text=text color=secondary %}

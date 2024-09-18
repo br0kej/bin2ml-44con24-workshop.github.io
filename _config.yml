@@ -11,29 +11,29 @@
 # SITE SETTINGS
 #
 # title appears in the header
-title: Learn-Static Lesson Template
+title: bin2ml 44con 2024 Workshop
 # title-icon appears in the header to give some pizazz (leave blank for none)
 # choose from Bootstrap Icons in _includes/bootstrap-icons
 # find names on https://icons.getbootstrap.com/ (or look in "_includes/bootstrap-icons")
 # some options: code-slash file-code gear tools lightblub book bookmark-star
-title-icon: code-slash
+title-icon: file-earmark-binary-fill
 # description appears in sidebar footer
-description: "Create a lesson website with markdown"
+description: "Turning software bianries into machine learning ready data"
 # keywords for meta tags used by search engines
-keywords: "workshops, websites, gh-pages, jekyll"
+keywords: "workshops, websites, gh-pages, 44con"
 # image for meta tags, will appear when sharing link on social media
-featured-image: "/images/uidaho-workshop.jpg"
+featured-image: "/images/binary_algo_alchemist.webp"
 
 # author name, displayed in credits
-author: evanwill
+author: br0kej
 # year or date published, displayed in sidebar
-publication_year: 2022
+publication_year: 2024
 # location of code, the full url to your github repository
-source-code: https://github.com/learn-static/lesson-template
+source-code: https://github.com/br0kej/44con-bin2ml-workshop-24
 # content license (typically "cc by-sa"), displayed in sidebar
-content_license: "CC BY-SA"
+content_license: "CC BY-NC"
 # URL to the content license
-content_license_link: https://creativecommons.org/licenses/by-sa/4.0/
+content_license_link: https://creativecommons.org/licenses/by-nc/4.0/
 
 ##########
 # THEME CUSTOMIZATION [optional!]

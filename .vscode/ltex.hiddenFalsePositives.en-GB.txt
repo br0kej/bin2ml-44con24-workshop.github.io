@@ -1,0 +1,1 @@
+{"rule":"NUMEROUS_DIFFERENT","sentence":"^\\QThis meant they could keep the same node features across several different instruction set architectures.\\E$"}
